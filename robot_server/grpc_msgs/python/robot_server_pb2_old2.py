@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='robot_server',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x12robot_server.proto\x12\x0crobot_server\"\x1a\n\x07Success\x12\x0f\n\x07success\x18\x01 \x01(\x08\"\x07\n\x05\x45mpty\")\n\x06\x41\x63tion\x12\x0e\n\x06\x61\x63tion\x18\x01 \x03(\x02\x12\x0f\n\x07success\x18\x02 \x01(\x08\"\x92\x03\n\x05State\x12\r\n\x05state\x18\x01 \x03(\x02\x12:\n\x0c\x66loat_params\x18\x02 \x03(\x0b\x32$.robot_server.State.FloatParamsEntry\x12<\n\rstring_params\x18\x03 \x03(\x0b\x32%.robot_server.State.StringParamsEntry\x12\x36\n\nstate_dict\x18\x04 \x03(\x0b\x32\".robot_server.State.StateDictEntry\x12\x0f\n\x07success\x18\x05 \x01(\x08\x12\r\n\x05image\x18\x06 \x01(\x0c\x12\r\n\x05\x64\x65pth\x18\x07 \x01(\x0c\x1a\x32\n\x10\x46loatParamsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\x33\n\x11StringParamsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x30\n\x0eStateDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x32\xff\x01\n\x0bRobotServer\x12\x36\n\x08GetState\x12\x13.robot_server.Empty\x1a\x13.robot_server.State\"\x00\x12\x38\n\x08SetState\x12\x13.robot_server.State\x1a\x15.robot_server.Success\"\x00\x12;\n\nSendAction\x12\x14.robot_server.Action\x1a\x15.robot_server.Success\"\x00\x12\x41\n\x12SendActionGetState\x12\x14.robot_server.Action\x1a\x13.robot_server.State\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x12robot_server.proto\x12\x0crobot_server\"\x1a\n\x07Success\x12\x0f\n\x07success\x18\x01 \x01(\x08\"\x07\n\x05\x45mpty\")\n\x06\x41\x63tion\x12\x0e\n\x06\x61\x63tion\x18\x01 \x03(\x02\x12\x0f\n\x07success\x18\x02 \x01(\x08\"\x83\x03\n\x05State\x12\r\n\x05state\x18\x01 \x03(\x02\x12:\n\x0c\x66loat_params\x18\x02 \x03(\x0b\x32$.robot_server.State.FloatParamsEntry\x12<\n\rstring_params\x18\x03 \x03(\x0b\x32%.robot_server.State.StringParamsEntry\x12\x36\n\nstate_dict\x18\x04 \x03(\x0b\x32\".robot_server.State.StateDictEntry\x12\x0f\n\x07success\x18\x05 \x01(\x08\x12\r\n\x05image\x18\x06 \x01(\x0c\x1a\x32\n\x10\x46loatParamsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\x33\n\x11StringParamsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x30\n\x0eStateDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x32\xff\x01\n\x0bRobotServer\x12\x36\n\x08GetState\x12\x13.robot_server.Empty\x1a\x13.robot_server.State\"\x00\x12\x38\n\x08SetState\x12\x13.robot_server.State\x1a\x15.robot_server.Success\"\x00\x12;\n\nSendAction\x12\x14.robot_server.Action\x1a\x15.robot_server.Success\"\x00\x12\x41\n\x12SendActionGetState\x12\x14.robot_server.Action\x1a\x13.robot_server.State\"\x00\x62\x06proto3')
 )
 
 
@@ -151,8 +151,8 @@ _STATE_FLOATPARAMSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=366,
-  serialized_end=416,
+  serialized_start=351,
+  serialized_end=401,
 )
 
 _STATE_STRINGPARAMSENTRY = _descriptor.Descriptor(
@@ -188,8 +188,8 @@ _STATE_STRINGPARAMSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=418,
-  serialized_end=469,
+  serialized_start=403,
+  serialized_end=454,
 )
 
 _STATE_STATEDICTENTRY = _descriptor.Descriptor(
@@ -225,8 +225,8 @@ _STATE_STATEDICTENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=471,
-  serialized_end=519,
+  serialized_start=456,
+  serialized_end=504,
 )
 
 _STATE = _descriptor.Descriptor(
@@ -278,13 +278,6 @@ _STATE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='depth', full_name='robot_server.State.depth', index=6,
-      number=7, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b(""),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -298,7 +291,7 @@ _STATE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=117,
-  serialized_end=519,
+  serialized_end=504,
 )
 
 _STATE_FLOATPARAMSENTRY.containing_type = _STATE
@@ -376,8 +369,8 @@ _ROBOTSERVER = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=522,
-  serialized_end=777,
+  serialized_start=507,
+  serialized_end=762,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetState',

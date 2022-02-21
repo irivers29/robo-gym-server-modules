@@ -14,7 +14,8 @@ class Client():
         return msg.success
 
     def set_state_msg(self, state_msg):
-        msg = self.robot_server_stub.SetState(state_msg, timeout = 60)
+        msg = self.robot_server_stub.SetState(state_msg, timeout = 200)
+
         return msg.success
 
     def get_state(self,):

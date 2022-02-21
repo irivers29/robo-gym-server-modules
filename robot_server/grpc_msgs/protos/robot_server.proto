@@ -29,4 +29,6 @@ message State {
   map<string, string> string_params       = 3; 
   map<string, float> state_dict           = 4;
   bool success                            = 5;
+  bytes image                             = 6;
+  bytes depth                             = 7;
 }
